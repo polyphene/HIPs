@@ -1,0 +1,37 @@
+name: "Mark stale PRs & Issues"
+
+on:
+  schedule:
+    # Run this every day at 8 am
+    - cron: "0 8 * * *"
+
+jobs:
+  stale-pr:
+    runs-on: ubuntu-latest
+    name: "Mark stale PRs"
+    steps:
+      - uses: actions/stale@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          stale-pr-message: 'There has been no activity on this pull request for 5 months and 3 weeks. It will be closed
+           in a week if no further activity occurs.'
+          close-pr-message: 'This pull request was closed due to inactivity. If you are still pursuing it, feel free to
+          open it as a new HIP and refer this one.'
+          days-before-stale: 173
+          days-before-close: 7
+          stale-pr-label: 'stale'
+  stale-issue:
+    runs-on: ubuntu-latest
+    name: "Mark stale issues"
+    steps:
+      - uses: actions/stale@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          days-before-stale: 173
+          days-before-close: 7
+          stale-pr-label: 'stale'
+          stale-issue-label: 'stale'
+          stale-issue-message: 'There has been no activity on this issue for 5 months and 3 weeks. It will be closed
+           in a week if no further activity occurs.'
+          close-issue-message: 'This issue was closed due to inactivity. If you are still pursuing it, feel free to
+          open it as a new HIP and refer this one.'
