@@ -47,7 +47,7 @@ Reference Implementation
 
 <An optional section that contains a reference/example implementation that people can use to assist in understanding or 
 implementing this specification. If the implementation is too large to reasonably be included inline, then consider 
-adding it as one or more files in ../assets/hip-####/.>
+adding it as one or more files in HIPs/hip-####/.>
 
 Security Considerations
 
