@@ -10,6 +10,6 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: 'Since this is your first issue, we kindly remind you to check out
-          documentation for guidance.'
+          documentation for guidance: https://docs.holium.org/contributing/hip .'
           pr-message: 'Since this is your first pull request, we kindly remind you to check out
-          documentation for guidance.'
+          documentation for guidance: https://docs.holium.org/contributing/hip.'
