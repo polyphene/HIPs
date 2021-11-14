@@ -12,7 +12,7 @@
 
 ### 📝 Usage
 
-Before you initiate a pull request, please read the [dedicated documentation](https://docs.holium.org/contributing/hip) to know more about
+Before you initiate a pull request, please read the [dedicated documentation](https://docs.holium.org/contributing#hip) to know more about
 the purpose and guidelines of the repository.
 
 ### 🙋 Show your support
